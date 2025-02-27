@@ -17,7 +17,7 @@ engine = create_engine(DATABASE_URL)
 file_path = r"C:\Users\Danie\OneDrive\Escritorio\Global Economy Indicators.csv"
 df = pd.read_csv(file_path)
 
-# Limpiar noombres de columnas (espacios y reemplazar guiones bajos)
+# Limpiar nombres de columnas (espacios y reemplazar guiones bajos)
 df.columns = df.columns.str.strip().str.replace(" ", "_")
 
 #ver info general del dataset
