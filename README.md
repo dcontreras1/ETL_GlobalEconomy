@@ -30,7 +30,6 @@ Se verifica la inserción de datos.
 4 Análisis y Visualización:
 Estadísticas descriptivas.
 Histogramas de variables clave.
-Matriz de correlación.
 
 # Instalación y Configuración
 ```bash
