@@ -39,22 +39,37 @@ cd ETL_GlobalEconomy
 ```
 
 ```bash
-python -m venv env
-env\Scripts\activate
+python -m venv ETLGE-env
+ETLGE-env\Scripts\activate
 ```
 
 # Instalar dependencias
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 # Configuración a la base de datos PostgreSQL
 ```sql
-CREATE DATABASE ETLGE;
+CREATE DATABASE ETL_GlobalEconomy;
 ```
 
 # Ejecución del proyecto
 
 1 Ejecutar el pipeline ETL
+```bash
+python script/ETL_GlobalEconomy.py
+```
+
+```bash
+jupyter notebook Notebook/ETLGlobalEconomy.ipynb
+```
+
+# Indicadores económicos analizados
+GDP (Gross Domestic Product)
+GNI (Gross National Income) per capita
+Exchange Rate
+Population
+Importaciones
+Gasto en consumo de los hogares
 
 
