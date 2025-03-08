@@ -65,11 +65,9 @@ jupyter notebook Notebook/ETLGlobalEconomy.ipynb
 ```
 
 # Indicadores económicos analizados
-GDP (Gross Domestic Product)
-GNI (Gross National Income) per capita
-Exchange Rate
-Population
-Imports
-Household Expenditure
-
-
+GDP (Gross Domestic Product),
+GNI (Gross National Income) per capita,
+Exchange Rate,
+Population,
+Imports,
+Household Expenditure.
