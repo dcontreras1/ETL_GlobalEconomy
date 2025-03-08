@@ -1,6 +1,6 @@
-ETL Project - Global Economy Indicators
+Proyecto ETL - Global Economy Indicators
 
-# Project Description
+# Descripción de proyecto
 
 Este proyecto implementa un proceso de ETL (Extract, Transform, Load) para analizar y visualizar indicadores económicos globales.
 Se extraen los datos de un archivo CSV, se cargan los datos crudos a la base de datos PostgreSQL, después se realizan transformaciones y limpieza a través de consultas PSQL, y luego se trae la información de la tabla transformada para generar las visualizaciones en python y Power BI. Finalmente, se generan visualizaciones para obtener información valiosa de los datos procesados.
@@ -69,7 +69,7 @@ GDP (Gross Domestic Product)
 GNI (Gross National Income) per capita
 Exchange Rate
 Population
-Importaciones
-Gasto en consumo de los hogares
+Imports
+Household Expenditure
 
 
