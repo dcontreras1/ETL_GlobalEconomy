@@ -1,37 +1,36 @@
-Proyecto ETL - Global Economy Indicators
+# Project ETL - Global Economy Indicators
 
-# Descripción de proyecto
+# Project Description
 
-Este proyecto implementa un proceso de ETL (Extract, Transform, Load) para analizar y visualizar indicadores económicos globales.
-Se extraen los datos de un archivo CSV, se cargan los datos crudos a la base de datos PostgreSQL, después se realizan transformaciones y limpieza a través de consultas PSQL, y luego se trae la información de la tabla transformada para generar las visualizaciones en python y Power BI. Finalmente, se generan visualizaciones para obtener información valiosa de los datos procesados.
+This project implements an Extract, Transform, Load (ETL) process to analyze and visualize global economic indicators. The data is extracted from a CSV file, loaded into a PostgreSQL database, transformed and cleaned using PSQL queries, and then used to generate visualizations in Python and Power BI. Finally, the visualizations provide valuable insights into the processed data.
 
-# Herramientas Utilizadas
+# Tools
 
 Python (pandas, numpy, matplotlib, seaborn, sqlalchemy)
-PostgreSQL (almacenamiento de datos)
-Jupyter Notebook / Python Scripts (Análisis y visualización de datos)
-Git y Github (Control de versiones y documentación)
+PostgreSQL (data storage)
+Jupyter Notebook / Python Scripts (data analysis and visualization)
+Git and Github (version control and documentation)
 Power BI
 
-# Flujo del Proceso ETL
+# ETL Process Flow
 
-1 Extracción: Se carga el archivo CSV (Global Economy Indicators.csv) con Pandas.
+Extraction: The CSV file (Global Economy Indicators.csv) is loaded using Pandas.
 
-2 Transformación: 
-Se limpian los nombres de columnas.
-Se manejan valores nulos (relleno con mediana o eliminación si es necesario).
-se eliminan duplicados.
-se aplican transformaciones logarítmicas para normalizar datos.
+Transformation:
+Column names are cleaned.
+Null values are handled (filled with median or deleted if necessary).
+Duplicates are removed.
+Logarithmic transformations are applied to normalize data.
 
-3 Carga:
-Se almacenan los datos limpios en una base de datos PostgreSQL.
-Se verifica la inserción de datos.
+Load:
+The cleaned data is stored in a PostgreSQL database.
+Data insertion is verified.
 
-4 Análisis y Visualización:
-Estadísticas descriptivas.
-Histogramas de variables clave.
+Analysis and Visualization:
+Descriptive statistics.
+Histograms of key variables.
 
-# Instalación y Configuración
+# Installation and Configuration
 ```bash
 git clone https://github.com/dcontreras1/ETL_GlobalEconomy.git
 cd ETL_GlobalEconomy
@@ -42,19 +41,19 @@ python -m venv ETLGE-env
 ETLGE-env\Scripts\activate
 ```
 
-# Instalar dependencias
+# Instal Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-# Configuración a la base de datos PostgreSQL
+# PostgreSQL Database Configuration
 ```sql
 CREATE DATABASE ETL_GlobalEconomy;
 ```
 
-# Ejecución del proyecto
+# Running the Project
 
-1 Ejecutar el pipeline ETL
+1 Run the ETL pipeline
 ```bash
 python script/ETL_GlobalEconomy.py
 ```
@@ -63,10 +62,31 @@ python script/ETL_GlobalEconomy.py
 jupyter notebook Notebook/ETLGlobalEconomy.ipynb
 ```
 
-# Indicadores económicos analizados
+# Economic Indicators Analyzed
 GDP (Gross Domestic Product),
 GNI (Gross National Income) per capita,
 Exchange Rate,
 Population,
 Imports,
 Household Expenditure.
+
+# Conclusions
+1. GDP growth is different across countries.
+
+Some countries have grown fast in recent years, while others have stayed the same or grown slowly.
+This shows that some nations have found better ways to improve their economies, possibly through trade, investments, or government policies.
+
+2. Most people spend similar amounts, but a few spend much more.
+
+Household spending is mostly low, with only a few cases of very high expenses.
+This suggests that wealth is not spread evenly, and only a small group has much higher purchasing power.
+
+3. Exchange rates are very different between countries.
+
+Some countries have big differences between the AMA and IMF exchange rates, which may show economic instability or different ways of calculating them.
+Nations with unstable economies often show larger changes in exchange rates.
+
+4. Population size affects income per person.
+
+Countries with fewer people usually have a higher income per person, while larger countries have more mixed results.
+This means that income depends not only on how many people live in a country but also on things like jobs, businesses, and government decisions.
